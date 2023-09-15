@@ -3,6 +3,7 @@ const express = require("express");
 const { vehiculoRoute } = require("./routes/vehiculo.routes");
 const { proveedorRoutes } = require("./routes/proveedor.routes");
 const {empleadosRoutes} = require("./routes/empleados.routes");
+const { clientesRoutes } = require("./routes/cliente.routes");
 
 
 
@@ -16,6 +17,7 @@ app.use(express.json());
 app.use("/vehiculo", vehiculoRoute);
 app.use("/proveedor", proveedorRoutes);
 app.use("/empleados", empleadosRoutes);
+app.use("/clientes",clientesRoutes);
 
 
 
